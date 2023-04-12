@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg, #65799b 0%,#5e2563 100%);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1#titulo {
+    margin-top: 60px;
+    font-size: 5rem;
+}
+
+h2#descripcion {
+    margin-top: 60px;
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #444;
+}
+
+
+h1#titulo, h3#descripcion, p#descripcion{
+    margin-left: 50px;
+}
+
+
+p.descripcion {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
+
+/* Secciones */
+
+
+.inicio {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-image: url(https://1.bp.blogspot.com/-uYB09XjcVAs/W79cUmPAlXI/AAAAAAAAUXw/4oZnWWJTVjA0CQchrAuO27STGLEPd0hnwCLcBGAs/s1600/Captura%2Bde%2Bpantalla%2B2018-10-11%2Ba%2Blas%2B16.20.55.png);
+}
+
+
+section{
+    padding: 50px;
+}
+section#navbar{
+   background-color: #000000;
+}
+
+
+
+@media screen and (min-width: 650px) {
+
+    header {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 2rem;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 4rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 0px;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        background-color: #e9e9e9;
+        padding: 1rem;
+        width: 100%;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+    }
+}
