@@ -16,14 +16,15 @@
   <script src="https://kit.fontawesome.com/c29a8620a1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="estilos.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-  <title>Mi portafolio</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/icono.png">
+  <title>PortafolioRenzo</title>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="container">
-      <a href="#" class="logo">&lt;/&gt;MRGIANN</a>
+      <a href="#" class="logo"><img src="img/icono.png"
+          style="width: 35px; height: auto; border-radius: 10px;">MRGIANN</a>
       <input type="checkbox" id="toggler">
       <label for="toggler" onclick="toggleMenu()"><i class="fas fa-bars"></i></label>
       <div class="menu">
@@ -38,45 +39,49 @@
   </nav>
 
   <div class="container">
+
     <div class="inicio">
-      <div class="inicio-text">
       <h1 id="titulo">Renzo Roggiapane</h1>
-      <p class="descripcion">
-        Hola, me llamo es Renzo, soy un estudiante de secundaria.
-        Me considero una persona autodidacta y me gusta aprender por mi cuenta. Aunque no soy fanático de los
-        cursos formales, estoy siempre dispuesto a verlos y aprovechar cualquier oportunidad de crecimiento.
-      </p>
+      <span id="descripcion">¡Hola! Soy un estudiante de desarrollo web full stack.</span>
     </div>
-    </div>
+
+
     <h2 id="habilidades"></h2>
     <div class="habilidades">
       <div class="contenedor-habilidades">
         <h3 id="titulo-habilidad">Fronted</h3>
-        <li id="habilidades">Javascript</li>
-        <li id="habilidades">HTML</li>
-        <li id="habilidades">CSS</li>
-        <li id="habilidades">Bootstrap</li>
+        <ul>
+          <li id="habilidades"><i class="fa-brands fa-js" style="color: #f7df1e;"></i> Javascript</li>
+          <li id="habilidades"><i class="fa-brands fa-html5" style="color: #F1502F;"></i> HTML</li>
+          <li id="habilidades"><i class="fa-brands fa-css3-alt" style="color: #1572b5;"></i> CSS</li>
+          <li id="habilidades"><i class="fa-brands fa-bootstrap" style="color: #5d467f;"></i> Bootstrap</li>
+        </ul>
         <h3 id="titulo-habilidad">Backend</h3>
-      <li id="habilidades">Python</li>
-      <h3 id="titulo-habilidad">Base de Datos</h3>
-      <li id="habilidades">SQLite</li>
-      <li id="habilidades">PosgreSQL</li>
-      <h3 id="titulo-habilidad">Extra</h3>
-      <li id="habilidades">Postman</li>
-      <li id="habilidades">Git/Github</li>
+        <ul>
+          <li id="habilidades"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python</li>
+        </ul>
+        <h3 id="titulo-habilidad">Base de Datos</h3>
+        <ul>
+          <li id="habilidades"><i class="fa-sharp fa-solid fa-feather" style="color: #003856;"></i> SQLite</li>
+          <li id="habilidades">🐘 PosgreSQL</li>
+        </ul>
+        <h3 id="titulo-habilidad">Extra</h3>
+        <ul>
+          <li id="habilidades"><i class="fa-solid fa-user-astronaut" style="color: #F1502F;"></i> Postman</li>
+          <li id="habilidades"><i class="fa-brands fa-git-alt" style="color: #F1502F;"></i> Git/Github</li>
+        </ul>
+      </div>
     </div>
-    </div>
 
 
 
-    <h2 id="proyectos">Mis Proyectos</h2>
+    <h2 id="proyectos">Proyectos</h2>
     <div class="proyectos">
-
 
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/rglibrary.png" alt="Proyecto 1">
+            <img src="img/rglibrary.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -93,8 +98,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://rglibrary.netlify.app/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/RgLibrary" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://rglibrary.netlify.app/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/RgLibrary" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -103,7 +110,74 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/tarjetas.png" alt="Proyecto 1">
+            <img src="img/clima.webp" alt="Proyecto 1">
+          </div>
+          <div class="parte2">
+            <div class="container-text">
+              <h3 id="proyecto-titulo">PÁGINA WEB "Weather app"</h3>
+              <p id="proyecto-descripcion">Consumo de Weather API.</p>
+              <h4 id="tareas-titulo">Tareas Realizadas:</h4>
+              <ul id="tareas-lista">
+                <li>Consumo de Weather API.</li>
+                <li>Diseño de la interfaz de usuario.</li>
+              </ul>
+              <h4 id="tecnologias-titulo">Tecnologías:</h4>
+              <ul id="tecnologias-lista">
+                <li>Javascript, HTML, CSS</li>
+              </ul>
+            </div>
+            <div class="iconos-container">
+              <a href="https://mrgiann.github.io/Weather-app/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Weather-app" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="project-container">
+        <div class="project-box">
+          <div class="parte1">
+            <img src="img/pokedex.webp" alt="Proyecto 1">
+          </div>
+          <div class="parte2">
+            <div class="container-text">
+              <h3 id="proyecto-titulo">PÁGINA WEB "Pokedex"</h3>
+              <p id="proyecto-descripcion">Consumo de Api pokeapi.co.</p>
+              <h4 id="tareas-titulo">Tareas Realizadas:</h4>
+              <ul id="tareas-lista">
+                <li>Consumo de Api pokeapi.co.</li>
+                <li>Diseño de la interfaz de usuario.</li>
+              </ul>
+              <h4 id="tecnologias-titulo">Tecnologías:</h4>
+              <ul id="tecnologias-lista">
+                <li>Javascript, HTML, CSS</li>
+              </ul>
+            </div>
+            <div class="iconos-container">
+              <a href="https://mrgiann.github.io/Pokedex/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Pokedex" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="project-container">
+        <div class="project-box">
+          <div class="parte1">
+            <img src="img/tarjetas.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -121,8 +195,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Card-generator/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Card-generator" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Card-generator/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Card-generator" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -131,7 +207,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/calculator.png" alt="Proyecto 1">
+            <img src="img/calculator.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -148,8 +224,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Calculator/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Calculator" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Calculator/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Calculator" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -158,7 +236,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/encriptador.png" alt="Proyecto 1">
+            <img src="img/encriptador.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -175,8 +253,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Text-encryptor/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Text-encryptor" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Text-encryptor/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Text-encryptor" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -185,7 +265,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/cronometro.png" alt="Proyecto 1">
+            <img src="img/cronometro.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -213,7 +293,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/zombiecorner.png" alt="Proyecto 1">
+            <img src="img/zombiecorner.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -230,8 +310,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Zombie-corner/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Zombie-corner" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Zombie-corner/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Zombie-corner" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -240,7 +322,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/canicheelectronics.png" alt="Proyecto 1">
+            <img src="img/canicheelectronics.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -257,8 +339,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Caniche-electronics/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Caniche-electronics" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Caniche-electronics/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Caniche-electronics" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -267,7 +351,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/snakegame.png" alt="Proyecto 1">
+            <img src="img/snakegame.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -284,8 +368,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Snake-game/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Snake-game" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Snake-game/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Snake-game" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -294,7 +380,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/defense.png" alt="Proyecto 1">
+            <img src="img/defense.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -310,8 +396,10 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Defense-game/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Defense-game" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Defense-game/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Defense-game" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -320,7 +408,7 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/squaregame.png" alt="Proyecto 1">
+            <img src="img/squaregame.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
@@ -337,21 +425,23 @@
               </ul>
             </div>
             <div class="iconos-container">
-              <a href="https://mrgiann.github.io/Square-game/" target="_blank"><i class="fa-solid fa-eye" style="color: #82d649; font-size: 23px;"></i></a>
-              <a href="https://github.com/mrgiann/Square-game" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://mrgiann.github.io/Square-game/" target="_blank"><i class="fa-solid fa-eye"
+                  style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Square-game" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/gameppt.png" alt="Proyecto 1">
+            <img src="img/gameppt.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
-              <h3 id="proyecto-titulo">GAME DESKTOP "Rock paper scissors"</h3>
+              <h3 id="proyecto-titulo">JUEGO DE ESCRITORIO "Rock paper scissors"</h3>
               <p id="proyecto-descripcion">Juego de escritorio de piedra papel o tijera.</p>
               <h4 id="tareas-titulo">Tareas Realizadas:</h4>
               <ul id="tareas-lista">
@@ -366,7 +456,8 @@
             </div>
             <div class="iconos-container">
               <i class="fa-solid fa-eye" style="color: #423e3e; font-size: 23px;"></i>
-              <a href="https://github.com/mrgiann/rock-paper-scissors-game" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/rock-paper-scissors-game" target="_blank"><i
+                  class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -375,16 +466,16 @@
       <div class="project-container">
         <div class="project-box">
           <div class="parte1">
-            <img src="img/gamegtn.png" alt="Proyecto 1">
+            <img src="img/gamegtn.webp" alt="Proyecto 1">
           </div>
           <div class="parte2">
             <div class="container-text">
-              <h3 id="proyecto-titulo">GAME DESKTOP "Guess the number"</h3>
+              <h3 id="proyecto-titulo">JUEGO DE ESCRITORIO "Guess the number"</h3>
               <p id="proyecto-descripcion">Juego de adivinar el numero.</p>
               <h4 id="tareas-titulo">Tareas Realizadas:</h4>
               <ul id="tareas-lista">
-                <li>Mecánica del juego</li>
-                <li>Contador de intentos</li>
+                <li>Lógica del juego.</li>
+                <li>Contador de intentos.</li>
               </ul>
               <h4 id="tecnologias-titulo">Tecnologías:</h4>
               <ul id="tecnologias-lista">
@@ -393,7 +484,8 @@
             </div>
             <div class="iconos-container">
               <i class="fa-solid fa-eye" style="color: #423e3e; font-size: 23px;"></i>
-              <a href="https://github.com/mrgiann/Guess-the-number" target="_blank"><i class="fa-brands fa-github" style="color: #82d649; font-size: 23px;"></i></a>
+              <a href="https://github.com/mrgiann/Guess-the-number" target="_blank"><i class="fa-brands fa-github"
+                  style="color: #82d649; font-size: 23px;"></i></a>
             </div>
           </div>
         </div>
@@ -402,34 +494,22 @@
 
 
 
-
     </div>
 
-
-
-    <section id="contacto">
-      <h2 id="contacto">Contacto</h2>
-      <!--
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" autocomplete="email" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" autocomplete="off" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      -->
-    </section>
-
-    <div class="pie">
-      <a href="https://github.com/mrgiann" target="_blank"><i class="fa-brands fa-github" style="color: #80a1d4;"></i></a>
-      <a href="https://www.instagram.com/gianhg_/" target="_blank"><i class="fa-brands fa-instagram" style="color: #80a1d4;"></i></a>
-      <a href="https://www.linkedin.com/in/renzo-undefined-bb4520279/"><i class="fa-brands fa-linkedin" style="color: #80a1d4;"></i></a>
-    </div>
-
+    <h2 id="contacto">Contacto</h2>
 
   </div>
+
+  <div class="pie">
+    <a href="https://github.com/mrgiann" target="_blank"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+    <a href="https://www.instagram.com/gianhg_/" target="_blank"><i class="fa-brands fa-instagram"
+        style="color: #f74190;"></i></a>
+    <a href="https://www.linkedin.com/in/renzo-undefined-bb4520279/"><i class="fa-brands fa-linkedin"
+        style="color: #002c6e;"></i></a>
+  </div>
+
+
+
 
   <script src="scripts.js"></script>
 </body>
