@@ -66,7 +66,7 @@ span#descripcion {
 
     animation: typing 4s steps(54),
         blink .5s infinite step-end alternate;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 @keyframes typing {
@@ -184,17 +184,47 @@ li#habilidades {
     padding: 8px;
 }
 
+/* ICONOS DEL PROYECTO */
+.icono-hover {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .icono-hover:hover {
+    transform: translateY(-5px);
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: hidden;
+  }
+
+  .icono-hover:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+
 
 @media (width < 768px) {
     h1#titulo {
         font-size: 3rem;
     }
-    
+
     span#descripcion {
-     font-size: 12px;
+        font-size: 12px;
     }
 
-    
+
     .project-box {
         width: auto;
     }
@@ -269,9 +299,9 @@ li#habilidades {
         font-size: 20px;
     }
 
-    .logo img{
-        width: 35px; 
-        height: 35px; 
+    .logo img {
+        width: 35px;
+        height: 35px;
         border-radius: 10px;
     }
 
@@ -334,9 +364,9 @@ li#habilidades {
         font-size: 20px;
     }
 
-    .logo img{
-        width: 35px; 
-        height: 35px; 
+    .logo img {
+        width: 35px;
+        height: 35px;
         border-radius: 10px;
     }
 
