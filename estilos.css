@@ -149,11 +149,10 @@ li#habilidades {
     padding: 8px;
     color: var(--text-opaco);
     background-color: #3b526b;
-    border-radius: 10px;
     border-top: 1px solid rgba(255, 255, 255, .1);
     display: inline-block;
-    width: 611px;
-    max-width: 611px;
+    width: 780px;
+    max-width: 760px;
 }
 
 .project-box {
@@ -166,18 +165,25 @@ li#habilidades {
 }
 
 .parte1 img {
-    width: 224px;
-    height: 248px;
+    transition: transform 0.3s, filter 0.3s;
+    width: 309px;
+    height: 244px;
+    border: 1px white solid;
+}
+
+.parte1 img:hover {
+    filter: brightness(1.2); 
+    transform: scale(1.02);
 }
 
 .project-box .parte1 {
-    width: 40%;
+    width: 43%;
     height: 100%;
     padding: 8px;
 }
 
 .project-box .parte2 {
-    width: 60%;
+    width: 57%;
     color: white;
     height: 100%;
     padding: 8px;
@@ -214,7 +220,7 @@ li#habilidades {
 }
 
 
-@media (width < 768px) {
+@media (width < 994px) {
     h1#titulo {
         font-size: 3rem;
     }
@@ -223,7 +229,9 @@ li#habilidades {
         font-size: 12px;
     }
 
-
+.project-container{
+    max-width: 516px;
+}
     .project-box {
         width: auto;
     }
@@ -235,10 +243,11 @@ li#habilidades {
     }
 
     .parte1 img {
-        width: 224;
-        height: 248px;
+        width: 309px;
+        height: 244px;
     }
-    .parte1{
+
+    .parte1 {
         display: flex;
         justify-content: center;
     }
