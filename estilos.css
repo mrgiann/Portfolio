@@ -467,3 +467,14 @@ li.habilidades#Git-GitHub:hover {
 
 
 }
+
+/* Estilo para los enlaces del menú en hover */
+.navbar .list li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo para cambiar el fondo al hacer clic */
+  .navbar .list li a.active {
+    background-color: #555; 
+  }
+  
